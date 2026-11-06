@@ -1,31 +1,24 @@
-"""Renders assets/stats.svg and assets/langs.svg from the GitHub GraphQL API.
+"""Renders assets/activity.svg (+ -light): a single dashboard with contribution metrics,
+a 12-month weekly contribution chart and top languages, from the GitHub GraphQL API.
 
-Runs in the stats workflow with the default GITHUB_TOKEN, so only public data is used.
+Runs in the update workflow with the default GITHUB_TOKEN, so only public data is used
+(plus private contribution counts if the user enabled them on their profile).
 """
 import datetime as dt
 import json
 import os
 import urllib.request
 from pathlib import Path
-from xml.sax.saxutils import escape
+
+from brand import LANG_COLORS, MONO, SANS, THEMES, escape, finish
 
 USER = os.environ.get("GH_USER", "grimh3xx")
 OUT = Path(__file__).resolve().parent.parent / "assets"
-GREEN = "#2BFF88"
-MONO = "'JetBrains Mono','Fira Code',Consolas,Menlo,monospace"
-SANS = "'Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif"
-THEMES = [
-    {"bg": "#0B110E", "border": GREEN, "border_op": 0.28, "title": GREEN, "label": "#9BA7B4", "value": "#E6EDF3",
-     "legend": "#C9D1D9", "suffix": ""},
-    {"bg": "#FFFFFF", "border": "#1F883D", "border_op": 0.35, "title": "#116329", "label": "#57606A", "value": "#1F2328",
-     "legend": "#24292F", "suffix": "-light"},
-]
 SKIP_LANGS = {"Makefile", "Batchfile", "CMake", "PowerShell", "Dockerfile"}
 
 QUERY = """
 query($login: String!) {
   user(login: $login) {
-    followers { totalCount }
     repositories(ownerAffiliations: OWNER, privacy: PUBLIC, isFork: false, first: 100) {
       totalCount
       nodes {
@@ -35,8 +28,6 @@ query($login: String!) {
     }
     contributionsCollection {
       totalCommitContributions
-      totalPullRequestContributions
-      totalIssueContributions
       restrictedContributionsCount
       contributionCalendar { totalContributions weeks { contributionDays { date contributionCount } } }
     }
@@ -58,8 +49,7 @@ def fetch():
     return data["data"]["user"]
 
 
-def streaks(weeks):
-    days = [d for w in weeks for d in w["contributionDays"]]
+def streaks(days):
     today = dt.date.today().isoformat()
     longest = run = 0
     for d in days:
@@ -69,45 +59,12 @@ def streaks(weeks):
     for d in reversed(days):
         if d["contributionCount"]:
             current += 1
-        elif d["date"] != today:  # today without commits yet doesn't break the streak
+        elif d["date"] != today:  # no commits yet today doesn't break the streak
             break
     return current, longest
 
 
-def frame(w, h, title, body, th):
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{escape(title)}">
-<rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="10" fill="{th["bg"]}" stroke="{th["border"]}" stroke-opacity="{th["border_op"]}"/>
-<text x="24" y="38" fill="{th["title"]}" font-family="{MONO}" font-size="16" font-weight="700">{escape(title)}</text>
-{body}
-</svg>
-'''
-
-
-def stats_svg(u, th):
-    c = u["contributionsCollection"]
-    cur, longest = streaks(c["contributionCalendar"]["weeks"])
-    rows = [
-        ("Contributions (12 mo)", c["contributionCalendar"]["totalContributions"]),
-        ("Commits", c["totalCommitContributions"] + c["restrictedContributionsCount"]),
-        ("Pull requests", c["totalPullRequestContributions"]),
-        ("Issues", c["totalIssueContributions"]),
-        ("Public repos", u["repositories"]["totalCount"]),
-        ("Stars earned", sum(n["stargazerCount"] for n in u["repositories"]["nodes"])),
-        ("Current streak", f"{cur} days"),
-        ("Longest streak", f"{longest} days"),
-    ]
-    body = []
-    for i, (label, value) in enumerate(rows):
-        x = 24 + (i % 2) * 220
-        y = 78 + (i // 2) * 34
-        body.append(
-            f'<text x="{x}" y="{y}" fill="{th['label']}" font-family="{SANS}" font-size="13">{escape(label)}</text>'
-            f'<text x="{x + 196}" y="{y}" text-anchor="end" fill="{th['value']}" font-family="{MONO}" font-size="14" font-weight="700">{escape(str(value))}</text>'
-        )
-    return frame(460, 210, "$ github --stats", "".join(body), th)
-
-
-def langs_svg(u, th):
+def languages(u):
     totals, colors = {}, {}
     for repo in u["repositories"]["nodes"]:
         for e in repo["languages"]["edges"]:
@@ -115,31 +72,96 @@ def langs_svg(u, th):
             if name in SKIP_LANGS:
                 continue
             totals[name] = totals.get(name, 0) + e["size"]
-            colors[name] = e["node"]["color"] or GREEN
-    top = sorted(totals.items(), key=lambda kv: -kv[1])[:6]
+            colors[name] = LANG_COLORS.get(name) or e["node"]["color"] or "#888"
+    top = sorted(totals.items(), key=lambda kv: -kv[1])[:5]
+    top = [kv for kv in top if kv[1] >= 0.01 * sum(totals.values())]
     total = sum(v for _, v in top) or 1
-    bar, x, legend = [], 24.0, []
-    for i, (name, size) in enumerate(top):
-        seg = 412 * size / total
-        bar.append(f'<rect x="{x:.1f}" y="58" width="{seg:.1f}" height="10" fill="{colors[name]}"/>')
+    return [(n, v / total, colors[n]) for n, v in top]
+
+
+def dashboard(u, th):
+    w, h = 900, 300
+    c = u["contributionsCollection"]
+    weeks = c["contributionCalendar"]["weeks"]
+    days = [d for wk in weeks for d in wk["contributionDays"]]
+    cur, longest = streaks(days)
+    metrics = [
+        (c["contributionCalendar"]["totalContributions"], "contributions"),
+        (c["totalCommitContributions"] + c["restrictedContributionsCount"], "commits"),
+        (f"{cur}d", "current streak"),
+        (f"{longest}d", "longest streak"),
+        (u["repositories"]["totalCount"], "public repos"),
+        (sum(n["stargazerCount"] for n in u["repositories"]["nodes"]), "stars earned"),
+    ]
+    p = [
+        f'<text x="26" y="40" font-family="{MONO}" font-size="15" font-weight="700" fill="{th["title"]}">'
+        f'<tspan fill="{th["accent2"]}">$</tspan> github --activity</text>',
+        f'<text x="{w - 26}" y="40" text-anchor="end" font-family="{SANS}" font-size="12" fill="{th["muted"]}">last 12 months · updated {dt.date.today():%d %b %Y}</text>',
+        f'<path d="M26 58H{w - 26}" stroke="{th["border"]}"/>',
+    ]
+    for i, (val, label) in enumerate(metrics):
+        x = 26 + (i % 2) * 140
+        y = 104 + (i // 2) * 62
+        p.append(f'<text x="{x}" y="{y}" font-family="{MONO}" font-size="26" font-weight="700" fill="{th["title"]}">{escape(str(val))}</text>'
+                 f'<text x="{x}" y="{y + 20}" font-family="{SANS}" font-size="12" fill="{th["muted"]}">{escape(label)}</text>')
+    p.append(f'<path d="M318 78V{h - 26}" stroke="{th["border"]}"/>')
+
+    # weekly bars
+    cx0, cx1, cy0, cy1 = 346, w - 26, 84, 196
+    sums = [sum(d["contributionCount"] for d in wk["contributionDays"]) for wk in weeks][-52:]
+    peak = max(sums) or 1
+    bw = (cx1 - cx0) / len(sums)
+    for k in range(4):
+        gy = cy0 + (cy1 - cy0) * k / 3
+        p.append(f'<path d="M{cx0} {gy:.1f}H{cx1}" stroke="{th["border"]}" stroke-dasharray="2 4"/>')
+    for i, v in enumerate(sums):
+        bh = max(2.0, (cy1 - cy0) * v / peak) if v else 2.0
+        op = 1
+        fill = "url(#brand)" if v else th["border"]
+        p.append(f'<rect x="{cx0 + i * bw + 1.2:.1f}" y="{cy1 - bh:.1f}" width="{bw - 2.4:.1f}" height="{bh:.1f}" rx="1.5" fill="{fill}" opacity="{op}"/>')
+    first = dt.date.fromisoformat(weeks[-len(sums)]["contributionDays"][0]["date"])
+    last_month = None
+    for i in range(len(sums)):
+        d = first + dt.timedelta(weeks=i)
+        if d.month != last_month and i < len(sums) - 2:
+            if last_month is not None:
+                p.append(f'<text x="{cx0 + i * bw:.1f}" y="{cy1 + 18}" font-family="{SANS}" font-size="10.5" fill="{th["dim"]}">{d:%b}</text>')
+            last_month = d.month
+    p.append(f'<text x="{cx1}" y="{cy0 - 8}" text-anchor="end" font-family="{SANS}" font-size="10.5" fill="{th["dim"]}">peak {peak}/week</text>')
+
+    # languages
+    ly = 246
+    p.append(f'<text x="{cx0}" y="{ly}" font-family="{MONO}" font-size="11" font-weight="700" letter-spacing="1.5" fill="{th["muted"]}">LANGUAGES</text>')
+    langs = languages(u)
+    x = cx0 + 96
+    bar = []
+    for name, share, col in langs:
+        seg = (cx1 - cx0 - 96) * share
+        bar.append(f'<rect x="{x:.1f}" y="{ly - 9}" width="{seg:.1f}" height="8" fill="{col}"/>')
         x += seg
-        lx = 24 + (i % 2) * 210
-        ly = 100 + (i // 2) * 30
-        legend.append(
-            f'<circle cx="{lx + 5}" cy="{ly - 4}" r="5" fill="{colors[name]}"/>'
-            f'<text x="{lx + 16}" y="{ly}" fill="{th['legend']}" font-family="{SANS}" font-size="13">{escape(name)}</text>'
-            f'<text x="{lx + 186}" y="{ly}" text-anchor="end" fill="{th['label']}" font-family="{MONO}" font-size="12.5">{100 * size / total:.1f}%</text>'
-        )
-    body = (
-        '<clipPath id="bar"><rect x="24" y="58" width="412" height="10" rx="5"/></clipPath>'
-        f'<g clip-path="url(#bar)">{"".join(bar)}</g>{"".join(legend)}'
-    )
-    return frame(460, 210, "$ github --languages", body, th)
+    p.append(f'<clipPath id="lb"><rect x="{cx0 + 96}" y="{ly - 9}" width="{cx1 - cx0 - 96}" height="8" rx="4"/></clipPath><g clip-path="url(#lb)">{"".join(bar)}</g>')
+    x = cx0
+    for name, share, col in langs:
+        label = f"{name} {share * 100:.0f}%"
+        p.append(f'<circle cx="{x + 4}" cy="{ly + 23}" r="4" fill="{col}"/>'
+                 f'<text x="{x + 13}" y="{ly + 27}" font-family="{SANS}" font-size="12" fill="{th["text"]}">{escape(name)} '
+                 f'<tspan fill="{th["muted"]}">{share * 100:.0f}%</tspan></text>')
+        x += 30 + len(label) * 6.8
+
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="GitHub activity">
+<defs><linearGradient id="brand" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="{th["accent"]}"/><stop offset="1" stop-color="{th["accent2"]}"/></linearGradient>
+<linearGradient id="top" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{th["accent"]}"/><stop offset="1" stop-color="{th["accent2"]}"/></linearGradient>
+<clipPath id="c"><rect width="{w}" height="{h}" rx="12"/></clipPath></defs>
+<g clip-path="url(#c)"><rect width="{w}" height="{h}" fill="{th["panel"]}"/><rect width="{w}" height="2" fill="url(#top)"/></g>
+<rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="12" fill="none" stroke="{th["border"]}"/>
+{"".join(p)}
+</svg>
+'''
+    return finish(svg, {("JBM", 700), ("INT", 400)})
 
 
 if __name__ == "__main__":
     user = fetch()
     OUT.mkdir(exist_ok=True)
     for th in THEMES:
-        (OUT / f"stats{th['suffix']}.svg").write_text(stats_svg(user, th), encoding="utf-8")
-        (OUT / f"langs{th['suffix']}.svg").write_text(langs_svg(user, th), encoding="utf-8")
+        (OUT / f"activity{th['suffix']}.svg").write_text(dashboard(user, th), encoding="utf-8")
