@@ -1,112 +1,63 @@
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-<!-- BANNER: troque por um GIF seu (arraste o arquivo num issue do GitHub e copie o link gerado) -->
-<p align="center"><img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,100:22F700&height=200&section=header&text=grimh3xx&fontSize=60&fontColor=22F700&animation=twinkling" width="100%"/></p>
-
-<div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&color=%2322F700&size=40&center=true&vCenter=true&height=60&width=650&lines=Hi!+I'm+grimh3xx+%3C3;Offensive+Security+%26+AI;Pentesting+%7C+Low-level+tooling;Welcome+to+my+profile!" alt="Typing SVG"/>
-  </a>
-</div>
-
-<!-- GIF da direita: troque pelo link do seu GIF -->
-<img width="28%" align="right" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif">
-
-<h2 align="left">
-  Hi there
-  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"/>
-</h2>
-
-I'm **[`grimh3xx`](https://github.com/grimh3xx)**, working in **Offensive Security & AI** — pentesting, automation and low-level tooling in **C/C++, Python and Bash**. Currently building **[CentralTech](https://centraltechpc.com/)**.
-
-<details>
-  <summary>More about me</summary>
-
-- **Handle**: grimh3xx
-- **From**: Melbourne (Australia)
-- **Pentester** | **Security Researcher** | **Developer**
-- Focused on **Offensive Security**, **Automation** and **Low-level Tooling**
-- Improving knowledge in **Webapp Vulnerabilities**
-- Lifelong learner — always exploring **everything**
-- Building **[CentralTech](https://centraltechpc.com/)**
-- Reach me at **frameworkghost@proton.me**
-
-</details>
-<br>
-
----
-
-<h2 id="present_status">Present Status</h2>
-
-<img width="25%" align="right" src="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif">
-
-👉 Pentesting & offensive security research.
-
-👉 Writing automation & low-level tooling in C/C++, Python and Bash.
-
-👉 Building & contributing to open source projects.
-
-👉 Exploring AI applied to offensive security.
-
-👉 Building [CentralTech](https://centraltechpc.com/).
-
-`Updating:` Journey to Offensive Security Specialist.
-
----
-
-<h2 id="knowledge_skills">Knowledge & Skills</h2>
-
-<br>
-
-<div align="left">
-  <img src="https://img.shields.io/badge/Burp_Suite-FF6633?style=for-the-badge&logo=burp-suite&color=000000" alt="Burp Suite" />
-  <img src="https://img.shields.io/badge/Metasploit-008C8C?style=for-the-badge&logo=metasploit&color=000000" alt="Metasploit" />
-  <img src="https://img.shields.io/badge/Wireshark-009639?style=for-the-badge&logo=wireshark&color=000000" alt="Wireshark" />
-  <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&color=000000" alt="Bash" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&color=000000" alt="Python" />
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&color=000000" alt="Linux" />
-  <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&color=000000" alt="Go" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&color=000000" alt="Git" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&color=000000" alt="Docker" />
-  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&color=000000" alt="C" />
-  <img src="https://img.shields.io/badge/C%2B%2B-F34B7F?style=for-the-badge&logo=c%2B%2B&color=000000" alt="C++" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&color=000000" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/Node.js-8CC84C?style=for-the-badge&logo=node.js&color=000000" alt="NodeJS" />
-  <img src="https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kali-linux&color=000000" alt="Kali Linux" />
-  <img src="https://img.shields.io/badge/Parrot_OS-2E8E8F?style=for-the-badge&logo=parrot&color=000000" alt="Parrot OS" />
-  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&color=000000" alt="VS Code" />
-</div>
-
----
-
-<h2 id="github_stats">GitHub Stats 👨‍💻</h2>
-
-<img align="right" width="40%" src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif"/>
-
-[![GitHub stats](https://github-readme-stats.vercel.app/api?username=grimh3xx&show_icons=true&theme=vision-friendly-dark&bg_color=00000000&hide_border=true&custom_title=%20)](https://github.com/grimh3xx)
-
-[![GitHub Streak](https://streak-stats.demolab.com?user=grimh3xx&theme=dark&card_width=450&bg_color=00000000&hide_border=true)](https://git.io/streak-stats)
-
-<p align="left">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=grimh3xx&layout=compact&theme=vision-friendly-dark&bg_color=00000000&hide_border=true" width="450"/>
+<p align="center">
+  <img src="assets/banner.svg" alt="grimh3xx — Offensive Security & AI" width="100%"/>
 </p>
-
-<br clear="right"/>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=grimh3xx&theme=matrix&no-frame=true&no-bg=true&margin-w=4" />
+  <a href="https://centraltechpc.com"><img src="https://img.shields.io/badge/centraltechpc.com-0B110E?style=for-the-badge&color=0B110E&logoColor=2BFF88&logo=googlechrome" alt="Website"/></a>
+  <a href="mailto:frameworkghost@proton.me"><img src="https://img.shields.io/badge/frameworkghost@proton.me-0B110E?style=for-the-badge&color=0B110E&logoColor=2BFF88&logo=protonmail" alt="Email"/></a>
+  <img src="https://img.shields.io/badge/Melbourne,_AU-0B110E?style=for-the-badge&color=0B110E&logoColor=2BFF88&logo=googlemaps" alt="Location"/>
 </p>
 
-<br>
+## $ whoami
+
+Offensive security engineer focused on **pentesting, automation and low-level tooling**. I write most of my tools in **C/C++, Rust, Python and Bash**, from USB and Wi-Fi auditing on the terminal to hardened Linux setups and AI-assisted security. Founder of **[CentralTech](https://centraltechpc.com)**.
+
+- 🔭 Building **NetSentry**, a modular recon & security testing suite, and **Aegis**, an AI security copilot
+- 🛠️ Writing native Windows tooling with no external dependencies
+- 🔌 Learning **hardware hacking**: USB, firmware and microcontrollers (Arduino UNO)
+- 🛰️ Recon & OSINT with Shodan, Nmap and custom automation
+
+## $ ls ~/projects --featured
 
 <p align="center">
-  <b><i>"Never give up. Never back down."</i></b>
+  <a href="https://github.com/grimh3xx/usbscope"><img src="assets/card-usbscope.svg" width="49%" alt="usbscope"/></a>
+  <a href="https://github.com/grimh3xx/samcli-win-x64"><img src="assets/card-samcli.svg" width="49%" alt="samcli"/></a>
+  <a href="https://github.com/grimh3xx/aircracking-win-x64"><img src="assets/card-aircrack.svg" width="49%" alt="aircrackwin-x64"/></a>
+  <a href="https://github.com/grimh3xx/SecureArchSetup"><img src="assets/card-securearch.svg" width="49%" alt="SecureArchSetup"/></a>
+  <a href="https://github.com/grimh3xx/ExifTracer"><img src="assets/card-exiftracer.svg" width="49%" alt="ExifTracer"/></a>
 </p>
-<p align="center">🌱</p>
+
+## $ ls ~/projects --in-progress
+
+<p align="center">
+  <img src="assets/card-netsentry.svg" width="49%" alt="NetSentry"/>
+  <img src="assets/card-aegis.svg" width="49%" alt="Aegis"/>
+  <img src="assets/card-winforge.svg" width="49%" alt="WinForge"/>
+  <img src="assets/card-cts.svg" width="49%" alt="CTS Optimizer"/>
+</p>
+
+## $ cat skills.txt
+
+<table>
+<tr><td><b>Offensive Security</b></td><td><img src="https://img.shields.io/badge/Burp_Suite-0B110E?style=for-the-badge&color=0B110E&logoColor=2BFF88&logo=burpsuite" alt="Burp Suite"/> <img src="https://img.shields.io/badge/Metasploit-0B110E?style=for-the-badge&color=0B110E&logoColor=2BFF88&logo=metasploit" alt="Metasploit"/> <img src="https://img.shields.io/badge/Wireshark-0B110E?style=for-the-badge&color=0B110E&logoColor=2BFF88&logo=wireshark" alt="Wireshark"/> <img src="https://img.shields.io/badge/Nmap-0B110E?style=for-the-badge&color=0B110E&logoColor=2BFF88" alt="Nmap"/> <img src="https://img.shields.io/badge/Shodan-0B110E?style=for-the-badge&color=0B110E&logoColor=2BFF88" alt="Shodan"/> <img src="https://img.shields.io/badge/Recon_%26_OSINT-0B110E?style=for-the-badge&color=0B110E&logoColor=2BFF88" alt="Recon & OSINT"/> <img src="https://img.shields.io/badge/Kali_Linux-0B110E?style=for-the-badge&color=0B110E&logoColor=2BFF88&logo=kalilinux" alt="Kali Linux"/> <img src="https://img.shields.io/badge/Parrot_OS-0B110E?style=for-the-badge&color=0B110E&logoColor=2BFF88&logo=parrotsecurity" alt="Parrot OS"/> </td></tr>
+<tr><td><b>Languages</b></td><td><img src="https://img.shields.io/badge/C-0B110E?style=for-the-badge&color=0B110E&logoColor=2BFF88&logo=c" alt="C"/> <img src="https://img.shields.io/badge/C%2B%2B-0B110E?style=for-the-badge&color=0B110E&logoColor=2BFF88&logo=cplusplus" alt="C++"/> <img src="https://img.shields.io/badge/Rust-0B110E?style=for-the-badge&color=0B110E&logoColor=2BFF88&logo=rust" alt="Rust"/> <img src="https://img.shields.io/badge/Python-0B110E?style=for-the-badge&color=0B110E&logoColor=2BFF88&logo=python" alt="Python"/> <img src="https://img.shields.io/badge/Bash-0B110E?style=for-the-badge&color=0B110E&logoColor=2BFF88&logo=gnubash" alt="Bash"/> <img src="https://img.shields.io/badge/x86--64_ASM-0B110E?style=for-the-badge&color=0B110E&logoColor=2BFF88" alt="x86-64 ASM"/> <img src="https://img.shields.io/badge/TypeScript-0B110E?style=for-the-badge&color=0B110E&logoColor=2BFF88&logo=typescript" alt="TypeScript"/> <img src="https://img.shields.io/badge/JavaScript-0B110E?style=for-the-badge&color=0B110E&logoColor=2BFF88&logo=javascript" alt="JavaScript"/> </td></tr>
+<tr><td><b>Systems & Hardware</b></td><td><img src="https://img.shields.io/badge/Linux-0B110E?style=for-the-badge&color=0B110E&logoColor=2BFF88&logo=linux" alt="Linux"/> <img src="https://img.shields.io/badge/Arch_Linux-0B110E?style=for-the-badge&color=0B110E&logoColor=2BFF88&logo=archlinux" alt="Arch Linux"/> <img src="https://img.shields.io/badge/Debian-0B110E?style=for-the-badge&color=0B110E&logoColor=2BFF88&logo=debian" alt="Debian"/> <img src="https://img.shields.io/badge/Ubuntu-0B110E?style=for-the-badge&color=0B110E&logoColor=2BFF88&logo=ubuntu" alt="Ubuntu"/> <img src="https://img.shields.io/badge/Windows_Internals-0B110E?style=for-the-badge&color=0B110E&logoColor=2BFF88" alt="Windows Internals"/> <img src="https://img.shields.io/badge/Arduino_UNO-0B110E?style=for-the-badge&color=0B110E&logoColor=2BFF88&logo=arduino" alt="Arduino UNO"/> </td></tr>
+<tr><td><b>Tools</b></td><td><img src="https://img.shields.io/badge/Git-0B110E?style=for-the-badge&color=0B110E&logoColor=2BFF88&logo=git" alt="Git"/> <img src="https://img.shields.io/badge/Docker-0B110E?style=for-the-badge&color=0B110E&logoColor=2BFF88&logo=docker" alt="Docker"/> <img src="https://img.shields.io/badge/Tauri-0B110E?style=for-the-badge&color=0B110E&logoColor=2BFF88&logo=tauri" alt="Tauri"/> <img src="https://img.shields.io/badge/React-0B110E?style=for-the-badge&color=0B110E&logoColor=2BFF88&logo=react" alt="React"/> <img src="https://img.shields.io/badge/Node.js-0B110E?style=for-the-badge&color=0B110E&logoColor=2BFF88&logo=nodedotjs" alt="Node.js"/> <img src="https://img.shields.io/badge/VSCodium-0B110E?style=for-the-badge&color=0B110E&logoColor=2BFF88&logo=vscodium" alt="VSCodium"/> </td></tr>
+<tr><td><b>Learning</b></td><td><img src="https://img.shields.io/badge/Hardware_Hacking-0B110E?style=for-the-badge&color=0B110E&logoColor=2BFF88&logo=arduino" alt="Hardware Hacking"/> </td></tr>
+</table>
+
+## $ github --activity
+
+<p align="center">
+  <img src="assets/stats.svg" width="49%" alt="GitHub stats"/>
+  <img src="assets/langs.svg" width="49%" alt="Top languages"/>
+</p>
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/grimh3xx/grimh3xx/output/github-contribution-grid-snake-dark.svg" />
-    <img src="https://raw.githubusercontent.com/grimh3xx/grimh3xx/output/github-contribution-grid-snake.svg" alt="snake animation" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/grimh3xx/grimh3xx/output/github-contribution-grid-snake-dark.svg"/>
+    <img src="https://raw.githubusercontent.com/grimh3xx/grimh3xx/output/github-contribution-grid-snake.svg" alt="Contribution snake"/>
   </picture>
 </p>
+
+<p align="center"><sub><code>// authorized testing only · break things responsibly</code></sub></p>
