@@ -14,6 +14,12 @@ OUT = Path(__file__).resolve().parent.parent / "assets"
 GREEN = "#2BFF88"
 MONO = "'JetBrains Mono','Fira Code',Consolas,Menlo,monospace"
 SANS = "'Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif"
+THEMES = [
+    {"bg": "#0B110E", "border": GREEN, "border_op": 0.28, "title": GREEN, "label": "#9BA7B4", "value": "#E6EDF3",
+     "legend": "#C9D1D9", "suffix": ""},
+    {"bg": "#FFFFFF", "border": "#1F883D", "border_op": 0.35, "title": "#116329", "label": "#57606A", "value": "#1F2328",
+     "legend": "#24292F", "suffix": "-light"},
+]
 SKIP_LANGS = {"Makefile", "Batchfile", "CMake", "PowerShell", "Dockerfile"}
 
 QUERY = """
@@ -68,16 +74,16 @@ def streaks(weeks):
     return current, longest
 
 
-def frame(w, h, title, body):
+def frame(w, h, title, body, th):
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{escape(title)}">
-<rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="10" fill="#0B110E" stroke="{GREEN}" stroke-opacity="0.28"/>
-<text x="24" y="38" fill="{GREEN}" font-family="{MONO}" font-size="16" font-weight="700">{escape(title)}</text>
+<rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="10" fill="{th["bg"]}" stroke="{th["border"]}" stroke-opacity="{th["border_op"]}"/>
+<text x="24" y="38" fill="{th["title"]}" font-family="{MONO}" font-size="16" font-weight="700">{escape(title)}</text>
 {body}
 </svg>
 '''
 
 
-def stats_svg(u):
+def stats_svg(u, th):
     c = u["contributionsCollection"]
     cur, longest = streaks(c["contributionCalendar"]["weeks"])
     rows = [
@@ -95,13 +101,13 @@ def stats_svg(u):
         x = 24 + (i % 2) * 220
         y = 78 + (i // 2) * 34
         body.append(
-            f'<text x="{x}" y="{y}" fill="#9BA7B4" font-family="{SANS}" font-size="13">{escape(label)}</text>'
-            f'<text x="{x + 196}" y="{y}" text-anchor="end" fill="#E6EDF3" font-family="{MONO}" font-size="14" font-weight="700">{escape(str(value))}</text>'
+            f'<text x="{x}" y="{y}" fill="{th['label']}" font-family="{SANS}" font-size="13">{escape(label)}</text>'
+            f'<text x="{x + 196}" y="{y}" text-anchor="end" fill="{th['value']}" font-family="{MONO}" font-size="14" font-weight="700">{escape(str(value))}</text>'
         )
-    return frame(460, 210, "$ github --stats", "".join(body))
+    return frame(460, 210, "$ github --stats", "".join(body), th)
 
 
-def langs_svg(u):
+def langs_svg(u, th):
     totals, colors = {}, {}
     for repo in u["repositories"]["nodes"]:
         for e in repo["languages"]["edges"]:
@@ -121,18 +127,19 @@ def langs_svg(u):
         ly = 100 + (i // 2) * 30
         legend.append(
             f'<circle cx="{lx + 5}" cy="{ly - 4}" r="5" fill="{colors[name]}"/>'
-            f'<text x="{lx + 16}" y="{ly}" fill="#C9D1D9" font-family="{SANS}" font-size="13">{escape(name)}</text>'
-            f'<text x="{lx + 186}" y="{ly}" text-anchor="end" fill="#9BA7B4" font-family="{MONO}" font-size="12.5">{100 * size / total:.1f}%</text>'
+            f'<text x="{lx + 16}" y="{ly}" fill="{th['legend']}" font-family="{SANS}" font-size="13">{escape(name)}</text>'
+            f'<text x="{lx + 186}" y="{ly}" text-anchor="end" fill="{th['label']}" font-family="{MONO}" font-size="12.5">{100 * size / total:.1f}%</text>'
         )
     body = (
         '<clipPath id="bar"><rect x="24" y="58" width="412" height="10" rx="5"/></clipPath>'
         f'<g clip-path="url(#bar)">{"".join(bar)}</g>{"".join(legend)}'
     )
-    return frame(460, 210, "$ github --languages", body)
+    return frame(460, 210, "$ github --languages", body, th)
 
 
 if __name__ == "__main__":
     user = fetch()
     OUT.mkdir(exist_ok=True)
-    (OUT / "stats.svg").write_text(stats_svg(user), encoding="utf-8")
-    (OUT / "langs.svg").write_text(langs_svg(user), encoding="utf-8")
+    for th in THEMES:
+        (OUT / f"stats{th['suffix']}.svg").write_text(stats_svg(user, th), encoding="utf-8")
+        (OUT / f"langs{th['suffix']}.svg").write_text(langs_svg(user, th), encoding="utf-8")
