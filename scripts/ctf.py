@@ -194,18 +194,19 @@ def main():
     OUT.mkdir(exist_ok=True)
     cells = []
     htb = cached("htb", fetch_htb)
-    if htb:
+    # a fresh account (0 points, no owns) is held back until there is progress to show
+    if htb and (htb.get("points") or htb.get("system_owns") or htb.get("user_owns") or htb.get("challenges")):
         for th in THEMES:
             (OUT / f"htb{th['suffix']}.svg").write_text(htb_card(htb, th), encoding="utf-8")
         cells.append(picture("htb", f"Hack The Box: {htb.get('rank')}", f"https://app.hackthebox.com/profile/{htb['id']}"))
     user = os.environ.get("THM_USER", "").strip()
     thm = cached("thm", lambda: fetch_thm(user)) if user else None
-    if thm:
+    if thm and (thm.get("rooms") or thm.get("badges")):
         for th in THEMES:
             (OUT / f"thm{th['suffix']}.svg").write_text(thm_card(thm, th), encoding="utf-8")
         cells.append(picture("thm", "TryHackMe profile", f"https://tryhackme.com/p/{thm['name']}"))
 
-    block = '\n<p align="center">\n' + "\n".join(cells) + "\n</p>\n" if cells else "\n"
+    block = '\n## Hacking platforms\n\n<p align="center">\n' + "\n".join(cells) + "\n</p>\n\n" if cells else "\n"
     text = README.read_text(encoding="utf-8")
     new = re.sub(r"(<!--CTF:START-->).*?(<!--CTF:END-->)", lambda m: m.group(1) + block + m.group(2), text, flags=re.S)
     if new != text:

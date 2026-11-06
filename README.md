@@ -83,12 +83,7 @@ Right now I'm building **NetSentry**, a modular recon suite, and **Aegis**, an A
   <picture><source media="(prefers-color-scheme: light)" srcset="assets/cert-light.svg"/><img src="assets/cert.svg" width="100%" alt="Certificate IV in Cyber Security (22603VIC)"/></picture>
 </p>
 
-## Hacking platforms
-
 <!--CTF:START-->
-<p align="center">
-  <a href="https://app.hackthebox.com/profile/4028415"><picture><source media="(prefers-color-scheme: light)" srcset="assets/htb-light.svg"/><img src="assets/htb.svg" width="49%" alt="Hack The Box: Noob"/></picture></a>
-</p>
 <!--CTF:END-->
 
 ## Stack
