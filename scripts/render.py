@@ -265,6 +265,7 @@ PROJECTS = [
     ("aircrack", "aircrackwin-x64", "TUI orchestrator for authorized Wi-Fi audits: handshake capture and offline cracking via aircrack-ng & hashcat.", ["Python"], "PUBLIC"),
     ("securearch", "SecureArchSetup", "Automated hardened Arch Linux setup: pentest tooling, hardened Docker, kernel hardening, SUID audit.", ["Python"], "PUBLIC"),
     ("exiftracer", "ExifTracer", "Extracts EXIF metadata, resolves GPS coordinates to addresses and plots them on interactive maps.", ["Python"], "PUBLIC"),
+    ("nyxnet", "NyxNet", "Tor identity rotator with a live circuit dashboard: verified exits and the full guard → middle → exit path.", ["Python"], "PUBLIC"),
     ("netsentry", "NetSentry", "Modular reconnaissance and security testing suite with a native desktop UI.", ["Rust", "TypeScript"], "IN DEVELOPMENT"),
     ("aegis", "Aegis", "AI security copilot for Windows and Linux: endpoint agent plus analysis backend.", ["Python"], "IN DEVELOPMENT"),
     ("winforge", "WinForge", "Windows optimization and hardening toolkit built for low-level control.", ["C++"], "IN DEVELOPMENT"),
