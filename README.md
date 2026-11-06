@@ -83,6 +83,11 @@ Right now I'm building **NetSentry**, a modular recon suite, and **Aegis**, an A
   <picture><source media="(prefers-color-scheme: light)" srcset="assets/cert-light.svg"/><img src="assets/cert.svg" width="100%" alt="Certificate IV in Cyber Security (22603VIC)"/></picture>
 </p>
 
+## Hacking platforms
+
+<!--CTF:START-->
+<!--CTF:END-->
+
 ## Stack
 
 <p align="center">
