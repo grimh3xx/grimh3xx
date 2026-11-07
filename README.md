@@ -62,6 +62,12 @@ Right now I'm building **NetSentry**, a modular recon suite, and **Aegis**, an A
 <p align="center"><sub>aircrackwin-x64 in demo mode with simulated networks. Only audit networks you own or are authorized to test.</sub></p>
 </details>
 
+## Latest releases
+
+<p align="center">
+  <picture><source media="(prefers-color-scheme: light)" srcset="assets/releases-light.svg"/><img src="assets/releases.svg" width="100%" alt="Latest releases across public repositories"/></picture>
+</p>
+
 ## Projects
 
 <p align="center">
