@@ -11,7 +11,7 @@ REPOS = {
     "usbscope": ("usbscope", "Interactive USB device inspector for the Windows terminal", ["C++", "WinUSB", "Windows"]),
     "samcli-win-x64": ("samcli", "Steam Achievement Manager for the terminal, in pure C", ["C", "Windows", "Linux"]),
     "aircracking-win-x64": ("aircrackwin-x64", "TUI orchestrator for authorized Wi-Fi audits", ["Python", "aircrack-ng", "hashcat"]),
-    "SecureArchSetup": ("SecureArchSetup", "Automated, hardened Arch Linux setup for pentesters", ["Python", "Arch Linux", "Hardening"]),
+    "SecureArchSetup": ("SecureArchSetup", "Hardening & pentest setup for Arch Linux, in plain Bash", ["Shell", "Arch Linux", "Hardening"]),
     "ExifTracer": ("ExifTracer", "EXIF metadata & GPS tracing with interactive maps", ["Python", "OSINT", "Forensics"]),
 }
 TH = DARK

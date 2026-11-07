@@ -263,7 +263,7 @@ def avatar():
 PROJECTS = [
     ("samcli", "samcli", "Terminal Steam Achievement Manager written in pure C. One small binary for Windows and Linux.", ["C"], "PUBLIC"),
     ("aircrack", "aircrackwin-x64", "TUI orchestrator for authorized Wi-Fi audits: handshake capture and offline cracking via aircrack-ng & hashcat.", ["Python"], "PUBLIC"),
-    ("securearch", "SecureArchSetup", "Automated hardened Arch Linux setup: pentest tooling, hardened Docker, kernel hardening, SUID audit.", ["Python"], "PUBLIC"),
+    ("securearch", "SecureArchSetup", "Arch Linux hardening & pentest setup in Bash: dry run, backups with restore, nftables, audit score.", ["Shell"], "PUBLIC"),
     ("exiftracer", "ExifTracer", "Extracts EXIF metadata, resolves GPS coordinates to addresses and plots them on interactive maps.", ["Python"], "PUBLIC"),
     ("nyxnet", "NyxNet", "Tor identity rotator with a live circuit dashboard: verified exits and the full guard → middle → exit path.", ["Python"], "PUBLIC"),
     ("netsentry", "NetSentry", "Modular reconnaissance and security testing suite with a native desktop UI.", ["Rust", "TypeScript"], "IN DEVELOPMENT"),
