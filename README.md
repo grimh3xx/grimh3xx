@@ -108,6 +108,7 @@ Right now I'm building **NetSentry**, a modular recon suite, and **Aegis**, an A
 - 🔓 Open-sourced [**usbscope**](https://github.com/grimh3xx/usbscope) <sub>· 22 days ago</sub>
 - 🔓 Open-sourced [**samcli-win-x64**](https://github.com/grimh3xx/samcli-win-x64) <sub>· 22 days ago</sub>
 - 🔓 Open-sourced [**ExifTracer**](https://github.com/grimh3xx/ExifTracer) <sub>· 14 months ago</sub>
+- 🔓 Open-sourced [**NyxNet**](https://github.com/grimh3xx/NyxNet) <sub>· 14 months ago</sub>
 <!--ACTIVITY:END-->
 
 <p align="center"><sub>authorized testing only · break things responsibly</sub></p>
