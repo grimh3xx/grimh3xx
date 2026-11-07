@@ -86,6 +86,9 @@ Right now I'm building **NetSentry**, a modular recon suite, and **Aegis**, an A
 ## Hacking platforms
 
 <!--CTF:START-->
+<p align="center">
+  <a href="https://app.hackthebox.com/profile/4028415"><picture><source media="(prefers-color-scheme: light)" srcset="assets/htb-light.svg"/><img src="assets/htb.svg" width="49%" alt="Hack The Box: Noob"/></picture></a>
+</p>
 <!--CTF:END-->
 
 ## Stack
@@ -101,7 +104,7 @@ Right now I'm building **NetSentry**, a modular recon suite, and **Aegis**, an A
 </p>
 
 <!--ACTIVITY:START-->
-- 🔓 Open-sourced [**aircracking-win-x64**](https://github.com/grimh3xx/aircracking-win-x64) <sub>· 21 days ago</sub>
+- 🔓 Open-sourced [**aircracking-win-x64**](https://github.com/grimh3xx/aircracking-win-x64) <sub>· 22 days ago</sub>
 - 🔓 Open-sourced [**usbscope**](https://github.com/grimh3xx/usbscope) <sub>· 22 days ago</sub>
 - 🔓 Open-sourced [**samcli-win-x64**](https://github.com/grimh3xx/samcli-win-x64) <sub>· 22 days ago</sub>
 - 🔓 Open-sourced [**ExifTracer**](https://github.com/grimh3xx/ExifTracer) <sub>· 14 months ago</sub>
