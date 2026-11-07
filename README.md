@@ -97,8 +97,8 @@ Right now I'm building **NetSentry**, a modular recon suite, and **Aegis**, an A
 
 <!--ACTIVITY:START-->
 - 🔓 Open-sourced [**aircracking-win-x64**](https://github.com/grimh3xx/aircracking-win-x64) <sub>· 21 days ago</sub>
-- 🔓 Open-sourced [**usbscope**](https://github.com/grimh3xx/usbscope) <sub>· 21 days ago</sub>
-- 🔓 Open-sourced [**samcli-win-x64**](https://github.com/grimh3xx/samcli-win-x64) <sub>· 21 days ago</sub>
+- 🔓 Open-sourced [**usbscope**](https://github.com/grimh3xx/usbscope) <sub>· 22 days ago</sub>
+- 🔓 Open-sourced [**samcli-win-x64**](https://github.com/grimh3xx/samcli-win-x64) <sub>· 22 days ago</sub>
 - 🔓 Open-sourced [**ExifTracer**](https://github.com/grimh3xx/ExifTracer) <sub>· 14 months ago</sub>
 <!--ACTIVITY:END-->
 
