@@ -72,6 +72,8 @@ Right now I'm building **NetSentry**, a modular recon suite, and **Aegis**, an A
 
 <p align="center">
   <a href="https://github.com/grimh3xx/DLLH3x"><picture><source media="(prefers-color-scheme: light)" srcset="assets/card-dllh3x-light.svg"/><img src="assets/card-dllh3x.svg" width="49%" alt="DLLH3x"/></picture></a>
+  <a href="https://github.com/grimh3xx/daclseek"><picture><source media="(prefers-color-scheme: light)" srcset="assets/card-daclseek-light.svg"/><img src="assets/card-daclseek.svg" width="49%" alt="daclseek"/></picture></a>
+  <a href="https://github.com/grimh3xx/arp-spoofer"><picture><source media="(prefers-color-scheme: light)" srcset="assets/card-arpspoofer-light.svg"/><img src="assets/card-arpspoofer.svg" width="49%" alt="arp-spoofer"/></picture></a>
   <a href="https://github.com/grimh3xx/samcli-win-x64"><picture><source media="(prefers-color-scheme: light)" srcset="assets/card-samcli-light.svg"/><img src="assets/card-samcli.svg" width="49%" alt="samcli"/></picture></a>
   <a href="https://github.com/grimh3xx/aircracking-win-x64"><picture><source media="(prefers-color-scheme: light)" srcset="assets/card-aircrack-light.svg"/><img src="assets/card-aircrack.svg" width="49%" alt="aircrackwin-x64"/></picture></a>
   <a href="https://github.com/grimh3xx/SecureArchSetup"><picture><source media="(prefers-color-scheme: light)" srcset="assets/card-securearch-light.svg"/><img src="assets/card-securearch.svg" width="49%" alt="SecureArchSetup"/></picture></a>

@@ -262,6 +262,8 @@ def avatar():
 
 PROJECTS = [
     ("dllh3x", "DLLH3x", "Read-only DLL hijacking auditor for Windows PE, finding deep transitive chains with ATT&CK mapping.", ["Rust"], "PUBLIC"),
+    ("daclseek", "daclseek", "Read-only Windows privesc enumerator: real AccessCheck over DACLs, services, tokens, autoruns and credential surfaces.", ["Rust"], "PUBLIC"),
+    ("arpspoofer", "arp-spoofer", "LAN MITM toolkit for authorised assessments: ARP spoof, host discovery, MAC spoof, LLMNR/NBT-NS/mDNS poisoning.", ["Rust"], "PUBLIC"),
     ("samcli", "samcli", "Terminal Steam Achievement Manager written in pure C. One small binary for Windows and Linux.", ["C"], "PUBLIC"),
     ("aircrack", "aircrackwin-x64", "TUI orchestrator for authorized Wi-Fi audits: handshake capture and offline cracking via aircrack-ng & hashcat.", ["Python"], "PUBLIC"),
     ("securearch", "SecureArchSetup", "Arch Linux hardening & pentest setup in Bash: dry run, backups with restore, nftables, audit score.", ["Shell"], "PUBLIC"),
