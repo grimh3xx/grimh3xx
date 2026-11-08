@@ -263,6 +263,7 @@ def avatar():
 PROJECTS = [
     ("dllh3x", "DLLH3x", "Read-only DLL hijacking auditor for Windows PE, finding deep transitive chains with ATT&CK mapping.", ["Rust"], "PUBLIC"),
     ("credreap", "credreap", "Lockout-aware credential spraying & hashcat orchestration for authorized engagements.", ["Rust"], "PUBLIC"),
+    ("faultline", "faultline", "Exploit-dev toolkit: ROP gadgets, cyclic patterns, checksec and a crash fuzzer.", ["Rust"], "PUBLIC"),
     ("daclseek", "daclseek", "Read-only Windows privesc enumerator: real AccessCheck over DACLs, services, tokens, autoruns and credential surfaces.", ["Rust"], "PUBLIC"),
     ("arpspoofer", "arp-spoofer", "LAN MITM toolkit for authorised assessments: ARP spoof, host discovery, MAC spoof, LLMNR/NBT-NS/mDNS poisoning.", ["Rust"], "PUBLIC"),
     ("samcli", "samcli", "Terminal Steam Achievement Manager written in pure C. One small binary for Windows and Linux.", ["C"], "PUBLIC"),
