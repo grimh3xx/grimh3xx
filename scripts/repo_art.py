@@ -13,6 +13,7 @@ REPOS = {
     "aircracking-win-x64": ("aircrackwin-x64", "TUI orchestrator for authorized Wi-Fi audits", ["Python", "aircrack-ng", "hashcat"]),
     "SecureArchSetup": ("SecureArchSetup", "Hardening & pentest setup for Arch Linux, in plain Bash", ["Shell", "Arch Linux", "Hardening"]),
     "ExifTracer": ("ExifTracer", "EXIF metadata & GPS tracing with interactive maps", ["Python", "OSINT", "Forensics"]),
+    "credreap": ("credreap", "Lockout-aware credential spraying & hash-cracking orchestrator", ["Rust", "hashcat", "Pentest"]),
 }
 TH = DARK
 
