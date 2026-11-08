@@ -83,10 +83,6 @@ Right now I'm building **NetSentry**, a modular recon suite, and **Aegis**, an A
   <a href="https://github.com/grimh3xx/pe-binaries"><picture><source media="(prefers-color-scheme: light)" srcset="assets/card-pebinaries-light.svg"/><img src="assets/card-pebinaries.svg" width="49%" alt="pe-binaries"/></picture></a>
   <a href="https://github.com/grimh3xx/netreap"><picture><source media="(prefers-color-scheme: light)" srcset="assets/card-netreap-light.svg"/><img src="assets/card-netreap.svg" width="49%" alt="netreap"/></picture></a>
   <a href="https://github.com/grimh3xx/403-bypass"><picture><source media="(prefers-color-scheme: light)" srcset="assets/card-bypass403-light.svg"/><img src="assets/card-bypass403.svg" width="49%" alt="403-bypass"/></picture></a>
-  <picture><source media="(prefers-color-scheme: light)" srcset="assets/card-netsentry-light.svg"/><img src="assets/card-netsentry.svg" width="49%" alt="NetSentry"/></picture>
-  <picture><source media="(prefers-color-scheme: light)" srcset="assets/card-aegis-light.svg"/><img src="assets/card-aegis.svg" width="49%" alt="Aegis"/></picture>
-  <picture><source media="(prefers-color-scheme: light)" srcset="assets/card-winforge-light.svg"/><img src="assets/card-winforge.svg" width="49%" alt="WinForge"/></picture>
-  <picture><source media="(prefers-color-scheme: light)" srcset="assets/card-cts-light.svg"/><img src="assets/card-cts.svg" width="49%" alt="CTS Optimizer"/></picture>
 </p>
 
 ## Certification

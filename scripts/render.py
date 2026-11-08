@@ -273,10 +273,6 @@ PROJECTS = [
     ("pebinaries", "pe-binaries", "EDR-evasion detector for PE files: imphash & IOCs, import/API analysis, RWX checks, risk score.", ["C++"], "PUBLIC"),
     ("netreap", "netreap", "Lean SMB+LDAP enum & post-ex in Python/Impacket: lockout-aware spraying, PtH, secretsdump, kerberoast.", ["Python"], "PUBLIC"),
     ("bypass403", "403-bypass", "403/401 bypass toolkit in C: verb tampering, IP headers, path mutations, batch mode, JSON/CSV output.", ["C"], "PUBLIC"),
-    ("netsentry", "NetSentry", "Modular reconnaissance and security testing suite with a native desktop UI.", ["Rust", "TypeScript"], "IN DEVELOPMENT"),
-    ("aegis", "Aegis", "AI security copilot for Windows and Linux: endpoint agent plus analysis backend.", ["Python"], "IN DEVELOPMENT"),
-    ("winforge", "WinForge", "Windows optimization and hardening toolkit built for low-level control.", ["C++"], "IN DEVELOPMENT"),
-    ("cts", "CTS Optimizer", "CentralTech's flagship desktop optimizer, with its website and backend.", ["TypeScript"], "IN DEVELOPMENT"),
 ]
 
 if __name__ == "__main__":
