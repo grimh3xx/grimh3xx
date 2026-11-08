@@ -108,12 +108,12 @@ Right now I'm building **NetSentry**, a modular recon suite, and **Aegis**, an A
 </p>
 
 <!--ACTIVITY:START-->
-- 🔨 Pushed to [**403-bypass**](https://github.com/grimh3xx/403-bypass) <sub>· 11 hours ago</sub>
-- 🔨 Pushed to [**pe-binaries**](https://github.com/grimh3xx/pe-binaries) <sub>· 11 hours ago</sub>
-- ⭐ Starred [**netreap**](https://github.com/grimh3xx/netreap) <sub>· 11 hours ago</sub>
-- ⭐ Starred [**pe-binaries**](https://github.com/grimh3xx/pe-binaries) <sub>· 11 hours ago</sub>
-- ⭐ Starred [**403-bypass**](https://github.com/grimh3xx/403-bypass) <sub>· 12 hours ago</sub>
-- 🔨 Pushed to [**usbscope**](https://github.com/grimh3xx/usbscope) <sub>· 16 hours ago</sub>
+- ⭐ Starred [**faultline**](https://github.com/grimh3xx/faultline) <sub>· just now</sub>
+- 🔓 Open-sourced [**faultline**](https://github.com/grimh3xx/faultline) <sub>· just now</sub>
+- 🔓 Open-sourced [**credreap**](https://github.com/grimh3xx/credreap) <sub>· just now</sub>
+- ⭐ Starred [**arp-spoofer**](https://github.com/grimh3xx/arp-spoofer) <sub>· 1 hour ago</sub>
+- ⭐ Starred [**daclseek**](https://github.com/grimh3xx/daclseek) <sub>· 5 hours ago</sub>
+- 🔓 Open-sourced [**DLLH3x**](https://github.com/grimh3xx/DLLH3x) <sub>· 5 hours ago</sub>
 <!--ACTIVITY:END-->
 
 <p align="center"><sub>authorized testing only · break things responsibly</sub></p>
