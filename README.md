@@ -57,8 +57,8 @@ Right now I'm building **NetSentry**, a modular recon suite, and **Aegis**, an A
 <details>
 <summary><b>More demos:</b> samcli · aircrackwin-x64</summary>
 <br>
-<a href="https://github.com/grimh3xx/samcli-win-x64"><img src="assets/demo-samcli.png" width="100%" alt="samcli demo"/></a>
-<a href="https://github.com/grimh3xx/aircracking-win-x64"><img src="assets/demo-aircrack.png" width="100%" alt="aircrackwin-x64 demo mode"/></a>
+<a href="https://github.com/grimh3xx/samcli-win-x64"><img src="assets/demo-samcli.svg" width="100%" alt="samcli demo"/></a>
+<a href="https://github.com/grimh3xx/aircracking-win-x64"><img src="assets/demo-aircrack.svg" width="100%" alt="aircrackwin-x64 demo mode"/></a>
 <p align="center"><sub>aircrackwin-x64 in demo mode with simulated networks. Only audit networks you own or are authorized to test.</sub></p>
 </details>
 
