@@ -114,7 +114,7 @@ Right now I'm building **NetSentry**, a modular recon suite, and **Aegis**, an A
 - 🔓 Open-sourced [**credreap**](https://github.com/grimh3xx/credreap) <sub>· 1 day ago</sub>
 - 🔨 Pushed to [**arp-spoofer**](https://github.com/grimh3xx/arp-spoofer) <sub>· 1 day ago</sub>
 - ⭐ Starred [**arp-spoofer**](https://github.com/grimh3xx/arp-spoofer) <sub>· 1 day ago</sub>
-- 🔨 Pushed to [**DLLH3x**](https://github.com/grimh3xx/DLLH3x) <sub>· 1 day ago</sub>
+- 🔨 Pushed to [**DLLH3x**](https://github.com/grimh3xx/DLLH3x) <sub>· 2 days ago</sub>
 <!--ACTIVITY:END-->
 
 <p align="center"><sub>authorized testing only · break things responsibly</sub></p>
