@@ -261,6 +261,7 @@ def avatar():
 
 
 PROJECTS = [
+    ("usbscope", "usbscope", "Interactive USB inspector for the Windows terminal: walks hubs via IOCTLs, decodes every descriptor, flags suspicious HID+storage devices. Single .exe, zero deps.", ["C++"], "PUBLIC"),
     ("dllh3x", "DLLH3x", "Read-only DLL hijacking auditor for Windows PE, finding deep transitive chains with ATT&CK mapping.", ["Rust"], "PUBLIC"),
     ("credreap", "credreap", "Lockout-aware credential spraying & hashcat orchestration for authorized engagements.", ["Rust"], "PUBLIC"),
     ("faultline", "faultline", "Exploit-dev toolkit: ROP gadgets, cyclic patterns, checksec and a crash fuzzer.", ["Rust"], "PUBLIC"),

@@ -71,6 +71,7 @@ Right now I'm building **NetSentry**, a modular recon suite, and **Aegis**, an A
 ## Projects
 
 <p align="center">
+  <a href="https://github.com/grimh3xx/usbscope"><picture><source media="(prefers-color-scheme: light)" srcset="assets/card-usbscope-light.svg"/><img src="assets/card-usbscope.svg" width="49%" alt="usbscope"/></picture></a>
   <a href="https://github.com/grimh3xx/DLLH3x"><picture><source media="(prefers-color-scheme: light)" srcset="assets/card-dllh3x-light.svg"/><img src="assets/card-dllh3x.svg" width="49%" alt="DLLH3x"/></picture></a>
   <a href="https://github.com/grimh3xx/credreap"><picture><source media="(prefers-color-scheme: light)" srcset="assets/card-credreap-light.svg"/><img src="assets/card-credreap.svg" width="49%" alt="credreap"/></picture></a>
   <a href="https://github.com/grimh3xx/faultline"><picture><source media="(prefers-color-scheme: light)" srcset="assets/card-faultline-light.svg"/><img src="assets/card-faultline.svg" width="49%" alt="faultline"/></picture></a>
