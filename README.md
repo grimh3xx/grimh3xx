@@ -109,11 +109,11 @@ Right now I'm building **NetSentry**, a modular recon suite, and **Aegis**, an A
 </p>
 
 <!--ACTIVITY:START-->
-- 🔨 Pushed to [**i3wm-dotfile**](https://github.com/grimh3xx/i3wm-dotfile) <sub>· 15 hours ago</sub>
-- 🚀 Released [v1.0.0](https://github.com/grimh3xx/i3wm-dotfile/releases/tag/v1.0.0) of [**i3wm-dotfile**](https://github.com/grimh3xx/i3wm-dotfile) <sub>· 15 hours ago</sub>
-- ⭐ Starred [**i3wm-dotfile**](https://github.com/grimh3xx/i3wm-dotfile) <sub>· 16 hours ago</sub>
-- 🔨 Pushed to [**aircracking-win-x64**](https://github.com/grimh3xx/aircracking-win-x64) <sub>· 23 hours ago</sub>
-- 🔨 Pushed to [**usbscope**](https://github.com/grimh3xx/usbscope) <sub>· 23 hours ago</sub>
+- 🔨 Pushed to [**i3wm-dotfile**](https://github.com/grimh3xx/i3wm-dotfile) <sub>· 1 day ago</sub>
+- 🚀 Released [v1.0.0](https://github.com/grimh3xx/i3wm-dotfile/releases/tag/v1.0.0) of [**i3wm-dotfile**](https://github.com/grimh3xx/i3wm-dotfile) <sub>· 1 day ago</sub>
+- ⭐ Starred [**i3wm-dotfile**](https://github.com/grimh3xx/i3wm-dotfile) <sub>· 1 day ago</sub>
+- 🔨 Pushed to [**aircracking-win-x64**](https://github.com/grimh3xx/aircracking-win-x64) <sub>· 1 day ago</sub>
+- 🔨 Pushed to [**usbscope**](https://github.com/grimh3xx/usbscope) <sub>· 1 day ago</sub>
 - 🔨 Pushed to [**samcli-win-x64**](https://github.com/grimh3xx/samcli-win-x64) <sub>· 1 day ago</sub>
 <!--ACTIVITY:END-->
 
