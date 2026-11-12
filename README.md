@@ -112,9 +112,9 @@ Right now I'm building **NetSentry**, a modular recon suite, and **Aegis**, an A
 - 🔨 Pushed to [**i3wm-dotfile**](https://github.com/grimh3xx/i3wm-dotfile) <sub>· 1 day ago</sub>
 - 🚀 Released [v1.0.0](https://github.com/grimh3xx/i3wm-dotfile/releases/tag/v1.0.0) of [**i3wm-dotfile**](https://github.com/grimh3xx/i3wm-dotfile) <sub>· 1 day ago</sub>
 - ⭐ Starred [**i3wm-dotfile**](https://github.com/grimh3xx/i3wm-dotfile) <sub>· 1 day ago</sub>
-- 🔨 Pushed to [**aircracking-win-x64**](https://github.com/grimh3xx/aircracking-win-x64) <sub>· 1 day ago</sub>
-- 🔨 Pushed to [**usbscope**](https://github.com/grimh3xx/usbscope) <sub>· 1 day ago</sub>
-- 🔨 Pushed to [**samcli-win-x64**](https://github.com/grimh3xx/samcli-win-x64) <sub>· 1 day ago</sub>
+- 🔨 Pushed to [**aircracking-win-x64**](https://github.com/grimh3xx/aircracking-win-x64) <sub>· 2 days ago</sub>
+- 🔨 Pushed to [**usbscope**](https://github.com/grimh3xx/usbscope) <sub>· 2 days ago</sub>
+- 🔨 Pushed to [**samcli-win-x64**](https://github.com/grimh3xx/samcli-win-x64) <sub>· 2 days ago</sub>
 <!--ACTIVITY:END-->
 
 <p align="center"><sub>authorized testing only · break things responsibly</sub></p>
