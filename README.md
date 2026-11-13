@@ -109,12 +109,12 @@ Right now I'm building **NetSentry**, a modular recon suite, and **Aegis**, an A
 </p>
 
 <!--ACTIVITY:START-->
-- ⭐ Starred [**bootcha1n**](https://github.com/grimh3xx/bootcha1n) <sub>· 1 hour ago</sub>
-- ⭐ Starred [**krnlh3x**](https://github.com/grimh3xx/krnlh3x) <sub>· 1 hour ago</sub>
-- ⭐ Starred [**drvaudit**](https://github.com/grimh3xx/drvaudit) <sub>· 1 hour ago</sub>
-- ⭐ Starred [**dmaguard**](https://github.com/grimh3xx/dmaguard) <sub>· 1 hour ago</sub>
-- ⭐ Starred [**fwhash**](https://github.com/grimh3xx/fwhash) <sub>· 1 hour ago</sub>
-- ⭐ Starred [**ntoskrnl**](https://github.com/grimh3xx/ntoskrnl) <sub>· 4 hours ago</sub>
+- ⭐ Starred [**rdpr0wl**](https://github.com/grimh3xx/rdpr0wl) <sub>· 4 hours ago</sub>
+- ⭐ Starred [**sc0utr**](https://github.com/grimh3xx/sc0utr) <sub>· 4 hours ago</sub>
+- ⭐ Starred [**w0rmgate**](https://github.com/grimh3xx/w0rmgate) <sub>· 4 hours ago</sub>
+- ⭐ Starred [**l00tcast**](https://github.com/grimh3xx/l00tcast) <sub>· 4 hours ago</sub>
+- ⭐ Starred [**cr4ckreap**](https://github.com/grimh3xx/cr4ckreap) <sub>· 4 hours ago</sub>
+- ⭐ Starred [**bootcha1n**](https://github.com/grimh3xx/bootcha1n) <sub>· 10 hours ago</sub>
 <!--ACTIVITY:END-->
 
 <p align="center"><sub>authorized testing only · break things responsibly</sub></p>
