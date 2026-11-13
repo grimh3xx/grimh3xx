@@ -109,12 +109,12 @@ Right now I'm building **NetSentry**, a modular recon suite, and **Aegis**, an A
 </p>
 
 <!--ACTIVITY:START-->
-- 🔨 Pushed to [**i3wm-dotfile**](https://github.com/grimh3xx/i3wm-dotfile) <sub>· 1 day ago</sub>
-- 🚀 Released [v1.0.0](https://github.com/grimh3xx/i3wm-dotfile/releases/tag/v1.0.0) of [**i3wm-dotfile**](https://github.com/grimh3xx/i3wm-dotfile) <sub>· 2 days ago</sub>
-- ⭐ Starred [**i3wm-dotfile**](https://github.com/grimh3xx/i3wm-dotfile) <sub>· 2 days ago</sub>
-- 🔨 Pushed to [**aircracking-win-x64**](https://github.com/grimh3xx/aircracking-win-x64) <sub>· 2 days ago</sub>
-- 🔨 Pushed to [**usbscope**](https://github.com/grimh3xx/usbscope) <sub>· 2 days ago</sub>
-- 🔨 Pushed to [**samcli-win-x64**](https://github.com/grimh3xx/samcli-win-x64) <sub>· 2 days ago</sub>
+- ⭐ Starred [**bootcha1n**](https://github.com/grimh3xx/bootcha1n) <sub>· 1 hour ago</sub>
+- ⭐ Starred [**krnlh3x**](https://github.com/grimh3xx/krnlh3x) <sub>· 1 hour ago</sub>
+- ⭐ Starred [**drvaudit**](https://github.com/grimh3xx/drvaudit) <sub>· 1 hour ago</sub>
+- ⭐ Starred [**dmaguard**](https://github.com/grimh3xx/dmaguard) <sub>· 1 hour ago</sub>
+- ⭐ Starred [**fwhash**](https://github.com/grimh3xx/fwhash) <sub>· 1 hour ago</sub>
+- ⭐ Starred [**ntoskrnl**](https://github.com/grimh3xx/ntoskrnl) <sub>· 4 hours ago</sub>
 <!--ACTIVITY:END-->
 
 <p align="center"><sub>authorized testing only · break things responsibly</sub></p>
