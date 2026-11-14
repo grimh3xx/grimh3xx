@@ -109,9 +109,9 @@ Right now I'm building **NetSentry**, a modular recon suite, and **Aegis**, an A
 </p>
 
 <!--ACTIVITY:START-->
-- 🔨 Pushed to [**sc0utr**](https://github.com/grimh3xx/sc0utr) <sub>· 14 hours ago</sub>
-- 🔨 Pushed to [**l00tcast**](https://github.com/grimh3xx/l00tcast) <sub>· 14 hours ago</sub>
-- 🔨 Pushed to [**w0rmgate**](https://github.com/grimh3xx/w0rmgate) <sub>· 14 hours ago</sub>
+- 🔨 Pushed to [**sc0utr**](https://github.com/grimh3xx/sc0utr) <sub>· 23 hours ago</sub>
+- 🔨 Pushed to [**l00tcast**](https://github.com/grimh3xx/l00tcast) <sub>· 1 day ago</sub>
+- 🔨 Pushed to [**w0rmgate**](https://github.com/grimh3xx/w0rmgate) <sub>· 1 day ago</sub>
 - ⭐ Starred [**rdpr0wl**](https://github.com/grimh3xx/rdpr0wl) <sub>· 1 day ago</sub>
 - ⭐ Starred [**sc0utr**](https://github.com/grimh3xx/sc0utr) <sub>· 1 day ago</sub>
 - ⭐ Starred [**w0rmgate**](https://github.com/grimh3xx/w0rmgate) <sub>· 1 day ago</sub>
